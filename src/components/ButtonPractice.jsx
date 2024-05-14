@@ -12,12 +12,14 @@ const ButtonPractice = () => {
   return (
     <div>
       <h1>You have clicked {count} times</h1>
-      <button className='btnLess' onClick={restarUno}>
-        Restar
-      </button>
-      <button className='btnPlus' onClick={sumarUno}>
-        Sumar
-      </button>
+      <div className='btnDiv'>
+        <button className='restar' onClick={restarUno}>
+          Restar
+        </button>
+        <button className='sumar' onClick={sumarUno}>
+          Sumar
+        </button>
+      </div>
     </div>
   )
 }
